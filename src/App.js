@@ -9,6 +9,7 @@ import NotFound from "./components/NotFound";
 import Profile from "./components/Profile";
 import Account from "./components/Account";
 import ActiveLink from "./components/ActiveLink";
+import RenderLoop from "./components/RenderLoop";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
         <div style={{ margin: "10px" }}>
           <Link to="/activelink">Active Link</Link>
         </div>
+        <div style={{ margin: "10px" }}>
+          <Link to="/renderloop">Render Loop </Link>
+        </div>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -51,6 +55,7 @@ function App() {
           <Route path="/nested/profile" element={<Profile />} />
         </Route>
         <Route path="/activelink" element={<ActiveLink />} />
+        <Route path="/renderloop" element={<RenderLoop />} />
       </Routes>
     </div>
   );
